@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badkamer</title>
+
+
+    <!-- google map cdn -->
+    <script src="/assets/google-map.js" defer></script>
+
+    <!-- link -->
+    <link href="/assets/style.css" rel="stylesheet" />
+
+    <!-- script -->
+    <script src="/assets/script.js" defer type="module"></script>
+
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="/assets/slider/swiper-bundle.min.css" />
+    <script src="assets/slider/swiper-bundle.min.js"></script>
+
+
+</head>
+
+<body class="font-oswald">
+    <!-- header -->
+    <header class="bg-[#091022]/10 w-full sticky z-50">
+        <div class="container mx-auto flex items-center justify-between p-5">
+            <!-- Left: Logo -->
+            <a href="/" class="flex items-center">
+                <img src="./assets/images/brand.svg" alt="Logo" class="h-[40px]" />
+            </a>
+
+            <!-- Middle: Nav (desktop only) -->
+            <nav class="hidden lg:flex gap-6 items-center">
+                <a href="/"
+                    class="text-white font-bold uppercase text-xl hover:text-[#F25C3C] transition px-3 py-2 block border-b-2">Wij</a>
+                <a href="/"
+                    class="text-white font-bold uppercase text-xl hover:text-[#F25C3C] transition px-3 py-2 block">Badkamers</a>
+                <a href="/"
+                    class="text-white font-bold uppercase text-xl hover:text-[#F25C3C] transition px-3 py-2 block">Verbouwing</a>
+                <a href="/"
+                    class="text-white font-bold uppercase text-xl hover:text-[#F25C3C] transition px-3 py-2 block">Werkwijze</a>
+                <a href="/"
+                    class="text-white font-bold uppercase text-xl hover:text-[#F25C3C] transition px-3 py-2 block">Referenties</a>
+                <a href="/"
+                    class="text-white font-bold uppercase text-xl hover:text-[#F25C3C] transition px-3 py-2 block">Garantie</a>
+            </nav>
+
+            <!-- Right: CTA button (desktop only) -->
+            <a href="/offerte"
+                class="hidden lg:inline-block bg-[#F25C3C] text-white font-bold px-9 py-3 uppercase hover:bg-[#d94f32] text-lg">
+                Offerte
+            </a>
+
+            <!-- Hamburger (mobile only) -->
+            <button id="menu-toggle" class="lg:hidden text-white z-10 border px-2 py-1 rounded">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <nav id="mobile-menu" class="lg:hidden hidden flex-col gap-4 px-5 py-6 absolute bg-[#091022] w-full z-10">
+            <a href="/" class="text-white font-bold uppercase text-base">Wij</a>
+            <a href="/" class="text-white font-bold uppercase text-base">Badkamers</a>
+            <a href="/" class="text-white font-bold uppercase text-base">Verbouwing</a>
+            <a href="/" class="text-white font-bold uppercase text-base">Werkwijze</a>
+            <a href="/" class="text-white font-bold uppercase text-base">Referenties</a>
+            <a href="/" class="text-white font-bold uppercase text-base">Garantie</a>
+            <a href="/offerte" class="mt-4 bg-[#F25C3C] text-white text-center px-6 py-3 font-bold uppercase text-base">
+                Offerte
+            </a>
+        </nav>
+    </header>
+
+    <!-- hero -->
+    <section class="lg:py-[180px] pt-[140px] mt-[-104px] relative px-3 z-10 min-h-screen flex flex-col justify-end">
+        <div class="p-4 xl:p-[30px] bg-[#091022]/40 backdrop-blur-[5px] max-w-[1096px] mx-auto mt-auto h-full">
+            <div class="text-white text-center text-lg xl:text-[50px] font-bold uppercase mb-2.5">Tap</div>
+            <div class="text-center text-white text-sm xl:text-base font-normal font-['Inter']">You can cover the walls
+                of the bathroom with different elements and materials. But wall tiles are the most popular choice. We
+                understand that: the tiles are solid and also available in many types. Would you like to know what our
+                range of wall tiles looks like? Then read on quickly and discover the possibilities.</div>
+        </div>
+
+        <!-- overlay -->
+        <img src="./assets/images/produce_category_bg.png" class="absolute inset-0 w-full h-full object-cover -z-10" />
+    </section>
+
+    <!-- Left text + right image -->
+    <div class="container-2 py-[86px] grid grid-cols-12 xl:items-center gap-6 xl:gap-20">
+        <div class="flex flex-col gap-4 xl:gap-8 col-span-12 xl:col-span-6">
+            <div class="text-[#091022] text-xl xl:text-[32px] font-bold uppercase">Water flow starts here — and so does
+                great design.
+            </div>
+            <div class="text-[#676b76] text-base xl:text-lg font-normal font-['Inter'] max-w-[650px]">Ga je je badkamer
+                Our collection of taps combines form, function, and durability to match the needs of modern homes,
+                commercial spaces, and outdoor areas. From sleek sensor taps to classic pillar designs, each type is
+                built with premium materials and tested for long-term reliability. Whether you're upgrading a bathroom,
+                fitting out a kitchen, or managing a large-scale plumbing project, we have the right tap to get the job
+                done — beautifully and efficiently.
+
+                Explore our range of categories below to find your perfect match.
+            </div>
+        </div>
+        <img src="https://dummyimage.com/678x560?text=Placeholder"
+            class="w-full h-auto object-cover xl:max-w-[678px] col-span-12 xl:col-span-6" alt="">
+    </div>
+
+    <!-- More Water Taps -->
+    <div class="py-[86px] bg-[#f4f4f4]">
+        <div class="container-2">
+            <div class="text-[#091022] text-xl xl:text-[32px] font-bold uppercase">Water flow starts here — and so does
+                great design.
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-6 xl:mt-12">
+                <div class="bg-white shadow-[0px_10px_20px_0px_rgba(9,16,34,0.16)] cursor-pointer group">
+                    <img src="https://dummyimage.com/426x305?text=Placeholder" alt=""
+                        class="max-h-[305px] object-cover w-full">
+                    <div
+                        class="text-[#091022] text-base xl:text-xl font-bold py-3 text-center group-hover:bg-[#091022] group-hover:text-white transition-colors duration-300">
+                        Wall-Mounted Taps</div>
+                </div>
+                <div class="bg-white shadow-[0px_10px_20px_0px_rgba(9,16,34,0.16)] cursor-pointer group">
+                    <img src="https://dummyimage.com/426x305?text=Placeholder" alt=""
+                        class="max-h-[305px] object-cover w-full">
+                    <div
+                        class="text-[#091022] text-base xl:text-xl font-bold py-3 text-center group-hover:bg-[#091022] group-hover:text-white transition-colors duration-300">
+                        Wall-Mounted Taps</div>
+                </div>
+                <div class="bg-white shadow-[0px_10px_20px_0px_rgba(9,16,34,0.16)] cursor-pointer group">
+                    <img src="https://dummyimage.com/426x305?text=Placeholder" alt=""
+                        class="max-h-[305px] object-cover w-full">
+                    <div
+                        class="text-[#091022] text-base xl:text-xl font-bold py-3 text-center group-hover:bg-[#091022] group-hover:text-white transition-colors duration-300">
+                        Wall-Mounted Taps</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left image + right text -->
+    <div class="container-2 py-[86px] grid grid-cols-12 xl:items-center gap-6 xl:gap-20">
+        <img src="https://dummyimage.com/678x560?text=Placeholder"
+            class="w-full h-auto object-cover xl:max-w-[678px] col-span-12 xl:col-span-6" alt="">
+        <div class="flex flex-col gap-4 xl:gap-8 col-span-12 xl:col-span-6">
+            <div class="text-[#091022] text-xl xl:text-[32px] font-bold uppercase">Different types of concrete-look
+                tiles</div>
+            <div class="text-[#676b76] text-base xl:text-lg font-normal font-['Inter'] max-w-[650px]">Ons assortiment
+                wandtegels kun je gerust ruim noemen. Zo bieden we verschillende formaten wandtegels aan, van de
+                kleinste decortegels tot aan grote tegels van bijvoorbeeld 60x120 cm. De meest standaardformaten zijn
+                60x60cm en 80x80cm, deze komen het vaakst voor in de badkamer. Daarnaast bieden we wandtegels met
+                verschillende prints, zoals houtlook en marmerlook en in alle kleuren van de regenboog. Dan zijn er ook
+                nog eens verschillende vormen wandtegels. Zo bieden we tegels aan met een vierkante, rechthoekige en
+                hexagon vorm. We hebben zelfs ovale tegels en tegels in de vorm van een visschub.
+            </div>
+        </div>
+    </div>
+
+    <!-- Different types of concrete-look tiles -->
+    <div class="py-[86px] bg-[#f4f4f4]">
+        <div class="container-2">
+            <div class="text-[#091022] text-xl xl:text-[32px] font-bold uppercase">Water flow starts here — and so does
+                great design.
+            </div>
+            <div class="text-[#676b76] text-base xl:text-lg font-normal font-['Inter'] max-w-[873px] mt-4 xl:mt-8">Ons
+                assortiment
+                wandtegels kun je gerust ruim noemen. Zo bieden we verschillende formaten wandtegels aan, van de
+                kleinste decortegels tot aan grote tegels van bijvoorbeeld 60x120 cm. De meest standaardformaten zijn
+                60x60cm en 80x80cm, deze komen het vaakst voor in de badkamer. Daarnaast bieden we wandtegels met
+                verschillende prints, zoals houtlook en marmerlook en in alle kleuren van de regenboog. Dan zijn er ook
+                nog eens verschillende vormen wandtegels. Zo bieden we tegels aan met een vierkante, rechthoekige en
+                hexagon vorm. We hebben zelfs ovale tegels en tegels in de vorm van een visschub.
+            </div>
+
+            <div class="space-y-4 xl:space-y-12 xl:gap-12 mt-6 xl:mt-12">
+                <div class="grid grid-cols-12 gap-5">
+                    <img src="https://dummyimage.com/426x305?text=Placeholder" alt=""
+                        class="w-full max-h-[320px] object-cover col-span-12 xl:col-span-4">
+                    <div class="col-span-12 xl:col-span-8">
+                        <div class="text-[#091022] text-xl xl:text-2xl font-bold uppercase">Water flow starts here —
+                            and so does
+                            great design.
+                        </div>
+                        <div
+                            class="text-[#676b76] text-base xl:text-lg font-normal font-['Inter'] max-w-[873px] mt-4 xl:mt-8">
+                            The designer bathroom style is known for its use of striking colors and unique elements.
+                            Decorative tiles therefore fit perfectly with this bathroom style. For example, choose
+                            gold-colored herringbone tiles and combine them with beige tiles, gold-colored accents and
+                            white sanitary ware.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-5">
+                    <img src="https://dummyimage.com/426x305?text=Placeholder" alt=""
+                        class="w-full max-h-[320px] object-cover col-span-12 xl:col-span-4">
+                    <div class="col-span-12 xl:col-span-8">
+                        <div class="text-[#091022] text-xl xl:text-2xl font-bold uppercase">Water flow starts here —
+                            and so does
+                            great design.
+                        </div>
+                        <div
+                            class="text-[#676b76] text-base xl:text-lg font-normal font-['Inter'] max-w-[873px] mt-4 xl:mt-8">
+                            The designer bathroom style is known for its use of striking colors and unique elements.
+                            Decorative tiles therefore fit perfectly with this bathroom style. For example, choose
+                            gold-colored herringbone tiles and combine them with beige tiles, gold-colored accents and
+                            white sanitary ware.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Let's build something that works beautifully -->
+    <div
+        class="bg-[url('../assets/images/build_something_that_works.png')] bg-no-repeat bg-center bg-cover xl:min-h-[900px] flex justify-center items-center">
+        <div class="p-4 xl:p-[30px] bg-[#091022]/40 backdrop-blur-[5px] container-2">
+            <div class="text-white text-center text-lg xl:text-[32px] font-bold uppercase mb-2.5">Let's Build Something
+                That Works Beautifully</div>
+            <div class="text-center text-white text-sm xl:text-lg font-normal font-['Inter']">From stylish tap
+                installations to fully integrated water systems, we specialize in seamless solutions that combine
+                function, durability, and design. Whether it's a new space or a renovation, we're ready to help bring
+                your vision to life.</div>
+            <!-- button -->
+            <button class="cursor-pointer px-10 bg-[#F25C3C] text-white text-lg font-bold w-full lg:py-4 py-3">
+                Offerte Aanvragen
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
