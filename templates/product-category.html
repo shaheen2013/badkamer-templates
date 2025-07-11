@@ -91,7 +91,7 @@
     </section>
 
     <!-- Left text + right image -->
-    <div class="container-2 py-[86px] grid grid-cols-12 xl:items-center gap-6 xl:gap-20">
+    <div class="container-2 py-6 xl:py-[86px] grid grid-cols-12 xl:items-center gap-6 xl:gap-20">
         <div class="flex flex-col gap-4 xl:gap-8 col-span-12 xl:col-span-6">
             <div class="text-[#091022] text-xl xl:text-[32px] font-bold uppercase">Water flow starts here — and so does
                 great design.
@@ -111,7 +111,7 @@
     </div>
 
     <!-- More Water Taps -->
-    <div class="py-[86px] bg-[#f4f4f4]">
+    <div class="py-6 xl:py-[86px] bg-[#f4f4f4]">
         <div class="container-2">
             <div class="text-[#091022] text-xl xl:text-[32px] font-bold uppercase">Water flow starts here — and so does
                 great design.
@@ -143,7 +143,7 @@
     </div>
 
     <!-- Left image + right text -->
-    <div class="container-2 py-[86px] grid grid-cols-12 xl:items-center gap-6 xl:gap-20">
+    <div class="container-2 py-6 xl:py-[86px] grid grid-cols-12 xl:items-center gap-6 xl:gap-20">
         <img src="https://dummyimage.com/678x560?text=Placeholder"
             class="w-full h-auto object-cover xl:max-w-[678px] col-span-12 xl:col-span-6" alt="">
         <div class="flex flex-col gap-4 xl:gap-8 col-span-12 xl:col-span-6">
@@ -161,7 +161,7 @@
     </div>
 
     <!-- Different types of concrete-look tiles -->
-    <div class="py-[86px] bg-[#f4f4f4]">
+    <div class="py-6 xl:py-[86px] bg-[#f4f4f4]">
         <div class="container-2">
             <div class="text-[#091022] text-xl xl:text-[32px] font-bold uppercase">Water flow starts here — and so does
                 great design.
@@ -218,17 +218,91 @@
     <!-- Let's build something that works beautifully -->
     <div
         class="bg-[url('../assets/images/build_something_that_works.png')] bg-no-repeat bg-center bg-cover xl:min-h-[900px] flex justify-center items-center">
-        <div class="p-4 xl:p-[30px] bg-[#091022]/40 backdrop-blur-[5px] container-2">
-            <div class="text-white text-center text-lg xl:text-[32px] font-bold uppercase mb-2.5">Let's Build Something
+        <div
+            class="p-4 xl:p-[30px] xl:px-[39px] bg-[#091022]/40 backdrop-blur-[5px] container-2 flex flex-col gap-8 justify-center items-center">
+            <div class="text-white text-center text-lg xl:text-[32px] font-bold uppercase">Let's Build Something
                 That Works Beautifully</div>
             <div class="text-center text-white text-sm xl:text-lg font-normal font-['Inter']">From stylish tap
                 installations to fully integrated water systems, we specialize in seamless solutions that combine
                 function, durability, and design. Whether it's a new space or a renovation, we're ready to help bring
                 your vision to life.</div>
-            <!-- button -->
-            <button class="cursor-pointer px-10 bg-[#F25C3C] text-white text-lg font-bold w-full lg:py-4 py-3">
-                Offerte Aanvragen
+
+            <div class="flex justify-between gap-4 xl:gap-[52px]">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/icons/check_circle.svg" alt="" class="size-5">
+                    <div class="text-white text-base font-semibold font-['Inter']">Residential & Commercial Projects
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/icons/check_circle.svg" alt="" class="size-5">
+                    <div class="text-white text-base font-semibold font-['Inter']">Residential & Commercial Projects
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/icons/check_circle.svg" alt="" class="size-5">
+                    <div class="text-white text-base font-semibold font-['Inter']">Residential & Commercial Projects
+                    </div>
+                </div>
+            </div>
+
+            <button class="cursor-pointer px-10 bg-[#F25C3C] text-white text-lg font-bold py-3 lg:py-4 leading-[18px]">
+                Make an Appointment
             </button>
+        </div>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="container-2 py-6 xl:py-[86px]">
+        <div class="text-[#091022] text-xl font-bold uppercase text-center xl:text-[40px] ">Photo Gallery</div>
+        <div class="mt-6 xl:mt-15">
+            <!-- Slider main container -->
+            <div class="swiper-product-category max-w-[1320px] overflow-hidden">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper mb-8">
+                    <!-- Slides -->
+                    <div class="swiper-slide w-1/2">
+                        <img src="https://dummyimage.com/660x520?text=Placeholder1" alt=""
+                            class="max-h-[520px] object-cover w-full" />
+                    </div>
+                    <div class="swiper-slide w-1/2">
+                        <img src="https://dummyimage.com/660x520?text=Placeholder2" alt=""
+                            class="max-h-[520px] object-cover w-full" />
+                    </div>
+                    <div class="swiper-slide w-1/2">
+                        <img src="https://dummyimage.com/660x520?text=Placeholder3" alt=""
+                            class="max-h-[520px] object-cover w-full" />
+                    </div>
+                    <div class="swiper-slide w-1/2">
+                        <img src="https://dummyimage.com/660x520?text=Placeholder4" alt=""
+                            class="max-h-[520px] object-cover w-full" />
+                    </div>
+                    <div class="swiper-slide w-1/2">
+                        <img src="https://dummyimage.com/660x520?text=Placeholder5" alt=""
+                            class="max-h-[520px] object-cover w-full" />
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="flex justify-center gap-2">
+                    <button id="swiper-button-prev"
+                        class="border p-4 h-12 w-12 flex justify-center items-center rounded-full border-[#4169E11A] hover:bg-[#E9EEFC] cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                            <path
+                                d="M15.5 6.1875H5.61035L10.1553 1.64258L9 0.5L2.5 7L9 13.5L10.1426 12.3574L5.61035 7.8125H15.5V6.1875Z"
+                                fill="#4169E1" />
+                        </svg>
+                    </button>
+
+                    <button id="swiper-button-next"
+                        class="border p-4 h-12 w-12 flex justify-center items-center rounded-full border-[#4169E11A] hover:bg-[#E9EEFC] cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                            <path
+                                d="M9 0.5L7.85742 1.64258L12.3896 6.1875H2.5V7.8125H12.3896L7.85742 12.3574L9 13.5L15.5 7L9 0.5Z"
+                                fill="#4169E1" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </body>

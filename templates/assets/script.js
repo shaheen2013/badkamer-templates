@@ -30,6 +30,19 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+const swiperProductCategory = new Swiper('.swiper-product-category', {
+  loop: true,
+  slidesPerView: 3,
+   spaceBetween: 20,
+  pagination: {
+    el: '.swiper-product-category .swiper-pagination',
+    clickable: true,
+  },
+   navigation: {
+    nextEl: '#swiper-button-next',
+    prevEl: '#swiper-button-prev',
+  },
+});
 const swiperButtonPrev = document.getElementById("swiper-button-prev");
 const swiperButtonNext = document.getElementById("swiper-button-next");
 
